@@ -15,21 +15,40 @@ Implemetar os três app
 Diretorios :
 
 iPhone2007/
+
 ├── src/
+
 │   ├── Main.java                  # Ponto de entrada do programa
+
 │   ├── iPhone.java                # Classe que gerencia apps e comandos
+
 │   ├── app/
+
 │   │   ├── App.java               # Classe abstrata base para todos os apps
+
 │   │   ├── iPod.java              # Aplicativo de música e vídeo
+
 │   │   ├── Telefone.java          # Aplicativo de chamadas e conferência
+
 │   │   └── Safari.java            # Aplicativo de navegação na web
+
 ├── test/
+
 │   ├── iPodTest.java              # Testes unitários para o iPod
+
 │   ├── TelefoneTest.java          # Testes unitários para o Telefone
+
 │   └── SafariTest.java            # Testes unitários para o Safari
+
 ├── resources/
+
 │   ├── midias.txt                 # Arquivo com lista de músicas e vídeos
+
 │   └── favoritos.txt              # Mídias favoritas armazenadas
+
 ├── README.md                      # Documentação do projeto
+
 └── mermaid/
-    └── diagramas.mmd              # Arquivo Mermaid com os UML gerados
+
+   └── diagramas.mmd              # Arquivo Mermaid com os UML gerados
+    
