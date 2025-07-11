@@ -1,6 +1,9 @@
 # Modelagem-iPhone-2007
+
 #Modelagem e Diagramação de um Componente iPhone
--vamos usar o prompt parar realizar os test nas classes adicionas-
+
+vamos usar o prompt parar realizar os test nas classes adicionadas
+
 Implemetar os três app 
 
 
