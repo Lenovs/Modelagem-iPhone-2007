@@ -24,23 +24,24 @@ java iphone.Main
 ```
 
 Modelagem-iPhone-2007/
+
 ├── src/
 
 │   ├── apps/
 
-│   │   ├── App.java
+│   │     ├── App.java
 
-│   │   ├── IpodPlayer.java
+│   │     ├── IpodPlayer.java
 
-│   │   ├── Telefone.java
-
-│   │   └── Safari.java
+│   │     ├── Telefone.java
+ 
+│   │     └── Safari.java
 
 │   └── iphone/
 
-│       ├── iPhone.java
+│         ├── iPhone.java
 
-│       └── Main.java
+│         └── Main.java
 
 ├── README.md
 
