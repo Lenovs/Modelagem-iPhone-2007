@@ -14,6 +14,8 @@ Recriação simplificada de três aplicativos icônicos do primeiro iPhone, usan
 ```bash
 git clone https://github.com/seu-usuario/Modelagem-iPhone-2007.git
 cd Modelagem-iPhone-2007
+
+```
 Modelagem-iPhone-2007/
 ├── src/
 │   ├── apps/
@@ -26,7 +28,7 @@ Modelagem-iPhone-2007/
 │       └── Main.java
 ├── README.md
 └── .gitignore
-```mermaid
+
 classDiagram
     class App {
         - nome: String
