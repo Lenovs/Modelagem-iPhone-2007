@@ -25,15 +25,25 @@ java iphone.Main
 
 Modelagem-iPhone-2007/
 ├── src/
+
 │   ├── apps/
+
 │   │   ├── App.java
+
 │   │   ├── IpodPlayer.java
+
 │   │   ├── Telefone.java
+
 │   │   └── Safari.java
+
 │   └── iphone/
+
 │       ├── iPhone.java
+
 │       └── Main.java
+
 ├── README.md
+
 └── .gitignore
 
 
