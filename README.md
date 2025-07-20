@@ -1,79 +1,136 @@
-# 📱 Simulador do iPhone 2007 em Java
+📱 Simulador do iPhone 2007 em Java
+“Reviva o início da era dos smartphones com um toque de Java moderno.”
 
-Recriação simplificada de três aplicativos icônicos do primeiro iPhone, usando Java com interação via terminal (prompt):
+🎬 Introdução
 
-- 🎵 **iPod**: Reproduz músicas com comandos básicos
-- ☎️ **Telefone**: Simula chamadas e gerencia contatos
-- 🌐 **Safari**: Navega via entrada de URL simulada
+iPhone 2007 Retro é um projeto em Java 24 que simula o funcionamento de um iPhone clássico diretamente no terminal. Ele recria com fidelidade a experiência dos primeiros apps lançados com o iPhone original — como o iPod para música, Telefone para chamadas e Safari como navegador — utilizando recursos de programação orientada a objetos e boas práticas modernas.
 
----
+⚙️ Funcionalidades
 
-## 🚀 Como executar
+🎶 Ipode: toca músicas, permite seleção, navegação de faixas e favoritos.
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/Modelagem-iPhone-2007.git
-cd Modelagem-iPhone-2007
+📞 Telefone: simula ligações, recebimento, conferências e encerramento.
 
-Compile os arquivos:
-javac src/iphone/Main.java
+🌐 Safari: acessa URLs via terminal com feedback em tempo real.
 
-Execute o projeto:
-java iphone.Main
+🧠 Sistema central: gerencia os apps, o menu principal e o fluxo do usuário.
 
-```
+🧱 Superclasse App: fornece comandos padronizados para todos os apps.
 
-Modelagem-iPhone-2007/
+🧠 Tecnologias utilizadas
 
-├── src/
+✅ Java 24
 
-│   ├── apps/
+✅ Paradigma OO completo
 
-│   │     ├── App.java
+✅ Terminal (CLI) como interface de usuário
 
-│   │     ├── IpodPlayer.java
+✅ Diagrama UML em Mermaid
 
-│   │     ├── Telefone.java
- 
-│   │     └── Safari.java
+✅ Organização por pacotes e modularidade de código
 
-│   └── iphone/
+📚 Público-Alvo
 
-│         ├── iPhone.java
+Estudantes de programação
 
-│         └── Main.java
+Desenvolvedores Java que querem revisar boas práticas
 
-├── README.md
+Curiosos por simulações vintage e reinterpretações retrô
 
-└── .gitignore
+Professores e instrutores buscando material didático ilustrativo
 
+🔁 Relação entre as classes e fluxo do sistema
 
-📐 Diagrama UML (Mermaid)
-Este diagrama representa a arquitetura orientada a objetos do simulador. Todos os aplicativos herdam da classe abstrata App, são gerenciados pela classe iPhone, que é instanciada diretamente no Main.
+O projeto simula um ambiente de terminal inspirado no iPhone clássico, com três aplicativos principais: Ipode, Telefone e Safari. O sistema é construído em Java 24 com foco em boas práticas de orientação a objetos (OO), como herança, encapsulamento, abstração e polimorfismo.
 
-Clique na imagem para editar ou visualizar:
+[![](https://mermaid.ink/img/pako:eNqNVV1v2jAU_SvIT1SFiBIYECGkbtWkSeWJbg9b9nCxb4i1xI5uHNSV0d9e5wNIQlY1L4nvPT6-5_jaOTCuBTKP8QjS9EHCjiD2lZCE3Eitek-ffeWrnn0KRO8-SXqHMpA_yyVsU0PAzWp1id7CliT1b2qRAHkIzVCs85n0RceghE77G0NS7RzHqYMiPAH6Gw5KIQ16JbCOkirQFFv-6xQS6evwUOkYcy1exVamjk2x3xIt6mpvY1TZqY76IkZzoHWWSg4NiQlkaUt1ihFy6-wZ30EHe1DdhISGNEeBXcmiih9SoG6EQchywa-w1yRNlx2RTA084FoKCak15dGOX0vYaw0WVAzvQPb5-u_kjTRZpO9NBlHL_CINZPJS_psPQD6fs1KZzn17sh4HWuGH9i6AF6RHuQMOHc5YxzluL4Bm11lj8wZWARIq-93Vf4rbFrSoEGIQjQ0bYlxFrZat1hGCqmX5hbfTzpboDQRA8kOSgWNq-_I7RR2tkFHU5f7V0QjbBld2NBRKe4LQMuUnCetdcNoh77xZtWxaSvEqTZ0FrEGqplgbqOT8-n3TmpMf9eW_4bAopBVqFnAOn9Yuw5Xe4XBVo6gFmyS1RJOmqLokCQs0G7AdScG8AKIUByxGe4_lY1Zo85kJMUafefZTAP3xma-OdlIC6qfWMfMMZXYa6WwXngZZIsBgdZmfEahEfpdmyjBvsigYmHdgz8wbj-6c2XTs3k3cxXjhTt3pgP21oLkzniwWs_mn0cgdzVz3OGAvxZojZz6zGBT2KqB19QPJX8c3I5Xlug?type=png)](https://mermaid.live/edit#pako:eNqNVV1v2jAU_SvIT1SFiBIYECGkbtWkSeWJbg9b9nCxb4i1xI5uHNSV0d9e5wNIQlY1L4nvPT6-5_jaOTCuBTKP8QjS9EHCjiD2lZCE3Eitek-ffeWrnn0KRO8-SXqHMpA_yyVsU0PAzWp1id7CliT1b2qRAHkIzVCs85n0RceghE77G0NS7RzHqYMiPAH6Gw5KIQ16JbCOkirQFFv-6xQS6evwUOkYcy1exVamjk2x3xIt6mpvY1TZqY76IkZzoHWWSg4NiQlkaUt1ihFy6-wZ30EHe1DdhISGNEeBXcmiih9SoG6EQchywa-w1yRNlx2RTA084FoKCak15dGOX0vYaw0WVAzvQPb5-u_kjTRZpO9NBlHL_CINZPJS_psPQD6fs1KZzn17sh4HWuGH9i6AF6RHuQMOHc5YxzluL4Bm11lj8wZWARIq-93Vf4rbFrSoEGIQjQ0bYlxFrZat1hGCqmX5hbfTzpboDQRA8kOSgWNq-_I7RR2tkFHU5f7V0QjbBld2NBRKe4LQMuUnCetdcNoh77xZtWxaSvEqTZ0FrEGqplgbqOT8-n3TmpMf9eW_4bAopBVqFnAOn9Yuw5Xe4XBVo6gFmyS1RJOmqLokCQs0G7AdScG8AKIUByxGe4_lY1Zo85kJMUafefZTAP3xma-OdlIC6qfWMfMMZXYa6WwXngZZIsBgdZmfEahEfpdmyjBvsigYmHdgz8wbj-6c2XTs3k3cxXjhTt3pgP21oLkzniwWs_mn0cgdzVz3OGAvxZojZz6zGBT2KqB19QPJX8c3I5Xlug)
 
+🧱 Estrutura hierárquica
 
-🎯 Objetivos do Projeto
-Este projeto foi desenvolvido para praticar:
+Main → Sistema → [Ipode, Telefone, Safari] → App (superclasse)
 
-Modelagem orientada a objetos em Java
+📌 App.java (abstract)
 
-Uso de classes abstratas e herança
+É a superclasse base para todos os aplicativos do sistema.
 
-Simulação de aplicativos via terminal
+Define os métodos comuns, como:
 
-Representação visual com diagrama UML via Mermaid
+abrir() e fechar() → mensagens de inicialização
 
-Feito com nostalgia e criatividade por EDILENO 💡📱 Simulador inspirado no iPhone original — agora reimaginado em Java!
+mostrarComandos(...) → exibe comandos disponíveis
 
+lerComando(...), informar(...), erro(...) → padronizam entrada e saída
 
-[![](https://mermaid.ink/img/pako:eNqFVN1u0zAUfhXL0qQgkipLWtpa0yQEF0xa0bTBDYSLQ3KaWiTHkeNMHaXPwxPwBHsxnLiFtKTFF1H8nb_vfD72hqcqQy54QmkBdf1WQq6hTIjZ1SHsdVWxjQPaFTBSJQr2YLSk_C_-kuVo3luT92LIWCI1reVRyczh24T6ZW4qld0V8IT6sFplsULWRrBb-71yma_7HmmjNZJ1kGTOl3R4m3EQh6bGIQPh2pzl_gELXCrCQ-apIgNG1YItoNoR99lAAyvbmNIyVad6PN1LIXPQHjUlarWXfcANMplKRaDfOE5e_wx99t94XMuvUr_b8zwrxgMsQcu-FKfpQ4p1Dfrj_a3X6GKQwFF2ebf6R2ioCpmCkY-t1p2CdmYP5JNk-wd9Qwb10hY928ACJB3Rt4jnuH3-Mhx6ccHusYDnn8-_sHZQe3GufgRBb7SPDPu5OYKdgg7c9RsE163dYR3BFnHGhLjPcy0zLpZQ1Ohze5qWst3zro2EmxWWmHBhfzPQ3xJ73bc2qAL6pFTJhdGNDdOqyVf7TVNlYHD3HvzxQMrQDlFDhos46jJwseFrLqLwcjSdRPHlOJ5H83gST3z-xMV4NorG8_l09ioM43Aax1uff-9qhqPZ1PpgJu1QLdwr1D1G29_G1V86?type=png)](https://mermaid.live/edit#pako:eNqFVN1u0zAUfhXL0qQgkipLWtpa0yQEF0xa0bTBDYSLQ3KaWiTHkeNMHaXPwxPwBHsxnLiFtKTFF1H8nb_vfD72hqcqQy54QmkBdf1WQq6hTIjZ1SHsdVWxjQPaFTBSJQr2YLSk_C_-kuVo3luT92LIWCI1reVRyczh24T6ZW4qld0V8IT6sFplsULWRrBb-71yma_7HmmjNZJ1kGTOl3R4m3EQh6bGIQPh2pzl_gELXCrCQ-apIgNG1YItoNoR99lAAyvbmNIyVad6PN1LIXPQHjUlarWXfcANMplKRaDfOE5e_wx99t94XMuvUr_b8zwrxgMsQcu-FKfpQ4p1Dfrj_a3X6GKQwFF2ebf6R2ioCpmCkY-t1p2CdmYP5JNk-wd9Qwb10hY928ACJB3Rt4jnuH3-Mhx6ccHusYDnn8-_sHZQe3GufgRBb7SPDPu5OYKdgg7c9RsE163dYR3BFnHGhLjPcy0zLpZQ1Ohze5qWst3zro2EmxWWmHBhfzPQ3xJ73bc2qAL6pFTJhdGNDdOqyVf7TVNlYHD3HvzxQMrQDlFDhos46jJwseFrLqLwcjSdRPHlOJ5H83gST3z-xMV4NorG8_l09ioM43Aax1uff-9qhqPZ1PpgJu1QLdwr1D1G29_G1V86)
+Evita repetição de código e padroniza a experiência entre apps.
 
+🎶 Ipode.java (música)
 
+Herda de App.
 
+Possui lista de músicas e vídeos.
 
+Funcionalidades:
 
+tocarMusica(), pausar()
 
+selecionarMusica(Scanner) → escolha pelo usuário
 
+avancarMusica(), retrocederMusica() → navegação por índice
 
+adicionarFavorito(String) → marca faixas favoritas
+
+📞 Telefone.java (chamadas)
+
+Herda de App.
+
+Gerencia chamadas individuais e conferência.
+
+Funcionalidades:
+
+fazerLigacao(String) → ligação simulada
+
+receberLigacao(), encerrarChamada()
+
+iniciarConferencia(String) → múltiplos participantes
+
+Mantém estado da chamada com emChamada : boolean.
+
+🌐 Safari.java (navegador)
+
+Herda de App.
+
+Simula acesso a uma URL informada pelo usuário.
+
+Método principal:
+
+acessarUrl(String) → imprime a URL acessada
+
+Enxuto e direto, ideal para representar o navegador minimalista.
+
+🧭 Sistema.java (controlador)
+
+Classe principal do sistema, que gerencia os ciclos de vida dos apps.
+
+Instancia os três apps (Ipode, Telefone, Safari).
+
+Apresenta o menu principal e aguarda comandos do usuário.
+
+Responsável por chamar abrir() → menu() → fechar() em cada app.
+
+🎯 Main.java (entrada)
+
+Responsável por iniciar o sistema.
+
+Simplesmente instancia Sistema e chama iniciar().
+
+🧬 Resumo do funcionamento
+
+O usuário inicia o programa pelo Main.
+
+O Sistema exibe o menu geral.
+
+Ao digitar um app, o sistema abre o app, mostra comandos e aguarda interação.
+
+Cada app trata seus próprios comandos usando os métodos herdados e personalizados.
+
+Ao sair, o sistema fecha o app e volta ao menu principal.
